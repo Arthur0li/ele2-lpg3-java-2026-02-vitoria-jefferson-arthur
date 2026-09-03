@@ -4,11 +4,11 @@
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Autores
 
 Desenvolvido por **Arthur Oliveira**, **Jefferson Braga**, **Vitória Pinheiro Simonetto**.
 
-## ⭐ Support
+## ⭐ Apoio
 
 Se você gostou deste projeto, considere dar uma estrela no GitHub!
 
