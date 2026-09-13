@@ -24,7 +24,11 @@ public class GeradorSenhaForte extends GeradorSenha {
         senha.append(sortearCaractere(NUMEROS));
         senha.append(sortearCaractere(ESPECIAIS));
 
-        return null;
+        while (senha.length() < tamanho) {
+            senha.append(sortearCaractere(todosCaracteres));
+        }
+
+        return embaralhar(senha.toString());
     }
 
 }
