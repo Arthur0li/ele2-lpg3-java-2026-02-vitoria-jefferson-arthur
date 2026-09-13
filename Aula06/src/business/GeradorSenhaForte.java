@@ -7,7 +7,7 @@ public class GeradorSenhaForte extends GeradorSenha {
     public GeradorSenhaForte(int tamanho) {
         if (tamanho < 12) {
             throw new IllegalArgumentException("O tamanho mínimo da senha é 12 caracteres.");
-            //comando de exceçao
+            // comando de exceçao
         }
 
         this.tamanho = tamanho;
@@ -15,13 +15,15 @@ public class GeradorSenhaForte extends GeradorSenha {
 
     @Override
     public String gerarSenha() {
-        String todosCaracteres =
-        MAIUSCULAS +
-        MINUSCULAS +
-        NUMEROS +
-        ESPECIAIS;
+        String todosCaracteres = MAIUSCULAS + MINUSCULAS + NUMEROS + ESPECIAIS;
 
-        
+        StringBuilder senha = new StringBuilder();
+
+        senha.append(sortearCaractere(MAIUSCULAS));
+        senha.append(sortearCaractere(MINUSCULAS));
+        senha.append(sortearCaractere(NUMEROS));
+        senha.append(sortearCaractere(ESPECIAIS));
+
         return null;
     }
 
