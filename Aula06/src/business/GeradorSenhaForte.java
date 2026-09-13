@@ -15,7 +15,13 @@ public class GeradorSenhaForte extends GeradorSenha {
 
     @Override
     public String gerarSenha() {
-        // TODO implementar
+        String todosCaracteres =
+        MAIUSCULAS +
+        MINUSCULAS +
+        NUMEROS +
+        ESPECIAIS;
+
+        
         return null;
     }
 
