@@ -5,7 +5,11 @@ public class GeradorSenhaForte extends GeradorSenha {
     private int tamanho;
 
     public GeradorSenhaForte(int tamanho) {
-        // TODO validar tamanho mínimo
+        if (tamanho < 12) {
+            throw new IllegalArgumentException("O tamanho mínimo da senha é 12 caracteres.");
+            //comando de exceçao
+        }
+
         this.tamanho = tamanho;
     }
 
@@ -14,5 +18,5 @@ public class GeradorSenhaForte extends GeradorSenha {
         // TODO implementar
         return null;
     }
-    
+
 }
